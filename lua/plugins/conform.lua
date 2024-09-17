@@ -43,7 +43,7 @@ return { -- Autoformat
       typescriptreact = { 'prettier' },
       svelte = { 'prettier' },
       css = { 'prettier' },
-      html = { 'prettier' },
+      html = { 'prettierd' },
       json = { 'prettier' },
       yaml = { 'prettier' },
       markdown = { 'prettier' },

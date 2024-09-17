@@ -30,6 +30,7 @@ require('lazy').setup {
   require 'plugins.misc',
   require 'plugins.comment',
   require 'plugins.conform',
+  require 'plugins.nvim-lint',
 }
 
 -- The line beneath this is called `modeline`. See `:help modeline`
