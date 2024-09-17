@@ -48,6 +48,7 @@ return { -- Autoformat
       yaml = { 'prettier' },
       markdown = { 'prettier' },
       graphql = { 'prettier' },
+      go = { 'goimports', 'golines', 'gofumpt' },
     },
   },
 }
