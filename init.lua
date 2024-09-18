@@ -31,6 +31,7 @@ require('lazy').setup {
   require 'plugins.comment',
   require 'plugins.conform',
   require 'plugins.nvim-lint',
+  require 'plugins.rainbow-delimiters',
 }
 
 -- The line beneath this is called `modeline`. See `:help modeline`
