@@ -27,5 +27,15 @@ return {
     vim.keymap.set('n', '<leader>ll', function()
       lint.try_lint()
     end, { desc = 'Trigger linting for current file' })
+
+    vim.api.nvim_create_user_command('LintToggle', function()
+      local is_linting_enabled = vim.diagnostic.is_enabled()
+      vim.diagnostic.enable(not is_linting_enabled)
+    end, {})
+
+    vim.keymap.set('n', '<leader>lt', function()
+      vim.cmd 'LintToggle'
+      print 'toggled linting.'
+    end, { desc = 'Toggle linting for current file' })
   end,
 }
