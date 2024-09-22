@@ -32,7 +32,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Set up plugins
 require('lazy').setup {
-  require 'plugins.colorschemes.nordic',
+  -- require 'plugins.colorschemes.nordic',
   -- require 'plugins.neotree',
   require 'plugins.bufferline',
   require 'plugins.lualine',
